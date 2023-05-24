@@ -1,0 +1,256 @@
+@import url("https://fonts.cdnfonts.com/css/futura-lt-bt");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Futura Bk BT", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  padding-top: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+  -moz-column-gap: 25px;
+  column-gap: 25px;
+  align-items: center;
+}
+.header__logo {
+  width: 80px;
+}
+.header__right {
+  display: flex;
+  -moz-column-gap: 48px;
+  column-gap: 48px;
+  align-items: center;
+}
+.header__link {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+}
+.header__link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: white;
+  right: 0;
+  bottom: -7px;
+  transition: 0.5s;
+}
+.header__link:hover::before {
+  left: 0;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.home {
+  position: relative;
+  padding: 258px 0 368px;
+  background: black url("../images/HomeBackground.png") center/cover no-repeat;
+}
+.home__block {
+  background: url("../images/HomeBlockBackground.png") left bottom/contain no-repeat;
+  display: flex;
+  -moz-column-gap: 94px;
+  column-gap: 94px;
+  align-items: center;
+  justify-content: center;
+}
+.home__block-color {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.home__block-color circle {
+  cursor: pointer;
+}
+.home__title {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.16em;
+  color: #ffffff;
+}
+.home__info {
+  width: 492px;
+}
+.home__img {
+  position: relative;
+  max-width: 50%;
+}
+.home__img-rotate {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-45%);
+  cursor: grab;
+}
+.home__details {
+  margin: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  align-items: center;
+}
+.home__btn {
+  font-size: 12px;
+  padding: 6px 16px;
+  font-size: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 36px;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.home__price {
+  font-size: 36px;
+  color: #ffffff;
+}
+.home__details-right {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 45px;
+  column-gap: 45px;
+}
+.home__size {
+  font-size: 16px;
+  margin-right: 19px;
+  color: #ffffff;
+}
+.home__size-select {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 36px;
+  line-height: 43px;
+  color: #ffffff;
+}
+.home__size-select option {
+  color: #000;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.essence {
+  position: relative;
+  padding: 220px 0 115px;
+}
+.essence__flash {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  left: -3px;
+  width: calc(100% + 5px);
+}
+.essence__flash_red {
+  background: #ba0000;
+  transform: rotate(-1.91deg);
+}
+.essence__flash_black {
+  background: #000000;
+  transform: rotate(2.92deg);
+}
+.essence__flash-text {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 32px;
+  letter-spacing: 1em;
+  color: #ffffff;
+}
+.essence__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 80px;
+}
+.essence__title {
+  position: relative;
+  font-size: 64px;
+  line-height: 100px;
+  color: #ffffff;
+  max-width: 611px;
+}
+.essence__title img {
+  width: 72px;
+  height: 72px;
+}
+.essence__title::before {
+  position: absolute;
+  top: 100px;
+  right: 14px;
+  content: "";
+  width: 287px;
+  height: 55px;
+  background: #ba0000;
+  mix-blend-mode: multiply;
+  transform: rotate(11.2deg);
+}
+.essence__description {
+  font-size: 16px;
+  line-height: 48px;
+  color: #ffffff;
+  max-width: 1064px;
+}
+.essence__btn {
+  font-size: 12px;
+  padding: 6px 16px;
+  font-size: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 36px;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.essence::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 496px;
+  height: 720px;
+  bottom: -250px;
+  background: url("../images/essence/redboots.png") center/cover no-repeat;
+  z-index: -1;
+}/*# sourceMappingURL=style.css.map */
