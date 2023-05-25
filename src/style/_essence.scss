@@ -3,13 +3,12 @@
   padding: 220px 0 115px;
   &__flash {
     padding: 20px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: absolute;
     top: -10px;
     left: -3px;
     width: calc(100% + 5px);
+    height: 80px!important;
+    z-index: 1000;
     &_red {
       background: #ba0000;
       transform: rotate(-1.91deg);
@@ -22,6 +21,7 @@
   &__flash-text {
     font-weight: 600;
     font-style: italic;
+    display: inline!important;
     font-size: 32px;
     letter-spacing: 1em;
     color: #ffffff;

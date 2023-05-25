@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  padding: 258px 0 368px;
+  padding: 258px 0 0;
   background: black url('../images/HomeBackground.png') center/cover no-repeat;
   &__block {
     background: url('../images/HomeBlockBackground.png') left bottom/contain
@@ -52,7 +52,6 @@
   &__btn {
     font-size: 12px;
     padding: 6px 16px;
-    font-size: 12px;
     border: 1px solid #ffffff;
     border-radius: 36px;
     background: transparent;
@@ -89,5 +88,49 @@
       font-size: 28px;
       line-height: 33px;
     }
+  }
+
+  &__swiper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 128px;
+  }
+  &__arrows {
+    display: flex;
+    -moz-column-gap: 44px;
+    column-gap: 44px;
+    align-items: center;
+  }
+  &__arrow {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    align-items: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  &__row {
+    width: 940px;
+  }
+  &__card {
+    border: 2px solid #ffffff;
+    padding: 134px 0 61px 32px;
+    position: relative;
+  }
+  &__card-img {
+    position: absolute;
+    left: 15px;
+    bottom: 101px;
+    width: 210px;
+  }
+  &__card-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__arrow {
+    color: white;
   }
 }

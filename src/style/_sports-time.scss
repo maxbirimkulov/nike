@@ -1,0 +1,85 @@
+.sports-time {
+  padding: 86px 0 80px;
+  &__title {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 25px;
+      background: url('../images/sports-time/title-before.png') center/cover
+        no-repeat;
+      mix-blend-mode: multiply;
+      width: 237px;
+      height: 78px;
+      z-index: 2;
+    }
+    & span {
+      font-family: 'Futura XBlkCnIt BT';
+      position: relative;
+      display: inline-block;
+      font-style: italic;
+      font-size: 96px;
+      line-height: 115px;
+      text-transform: capitalize;
+      transform: rotate(-10.67deg);
+      &:first-child {
+        color: #fff;
+        left: 44px;
+        z-index: 1;
+      }
+      &:last-child {
+        right: 44px;
+        top: 36px;
+        -webkit-text-stroke: 1px #fff;
+      }
+    }
+  }
+  &__grid {
+    margin: 120px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 47px;
+  }
+  &__card {
+    position: relative;
+    text-align: center;
+    &-product {
+      max-width: 300px;
+    }
+    &-desk {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      z-index: -1;
+    }
+    &-title {
+      margin-top: 45px;
+      font-size: 24px;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+    &:nth-child(3) {
+      grid-column: 2/3;
+    }
+  }
+  &__btn {
+    font-size: 12px;
+    padding: 6px 16px;
+    font-size: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 36px;
+    background: transparent;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+}
