@@ -1,0 +1,42 @@
+.weare{
+  padding: 180px 0 192px;
+    background: #000000;
+  &__box{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+  }
+  &__img{
+    img{
+      height: 416px;
+      width: 416px;
+    }
+  }
+  &__title {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__word{
+    color: red;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-top: 32px ;
+  }
+  &__btn{
+    display: inline-flex;
+    column-gap: 10px;
+    margin-top: 32px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 12px 24px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 36px;
+  }
+}

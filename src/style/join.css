@@ -1,0 +1,36 @@
+.join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.join__block {
+  width: 1200px;
+  height: 300px;
+  border-radius: 10px;
+}
+.join__title {
+  font-size: 48px;
+  color: #FFFFFF;
+}
+.join__text {
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.join__btn {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 36px;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 3px;
+     -moz-column-gap: 3px;
+          column-gap: 3px;
+  padding: 12px 24px;
+}

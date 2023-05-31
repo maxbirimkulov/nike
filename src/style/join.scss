@@ -1,0 +1,30 @@
+.join{
+  display: flex;
+  align-items: center;
+  &__block{
+    width: 1200px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    padding: 64px 40px 65px;
+  }
+  &__title{
+    font-size: 48px;
+    color: #FFFFFF;
+  }
+  &__text{
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+  &__btn{
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 36px;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: inline-flex;
+    column-gap: 3px;
+    padding: 12px 24px;
+  }
+}
